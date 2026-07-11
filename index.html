@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>गोड बातमी 👶✨ | गौरव आणि स्नेहल</title>
+  <meta name="description" content="गौरव आणि स्नेहल यांच्याकडून एक गोड बातमी. आश्चर्य पाहण्यासाठी भेट द्या!" />
+
+  <!-- Open Graph (absolute URLs so shared links preview correctly) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="एक गोड बातमी येत आहे 👶✨" />
+  <meta property="og:description" content="गौरव आणि स्नेहल यांच्याकडून काहीतरी खास. आश्चर्य पाहण्यासाठी उघडा!" />
+  <meta property="og:url" content="https://baby.gauravwankar.com/" />
+  <meta property="og:image" content="https://baby.gauravwankar.com/assets/images/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="एक गोड बातमी येत आहे 👶✨" />
+  <meta name="twitter:image" content="https://baby.gauravwankar.com/assets/images/og-image.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192.png" />
+  <link rel="apple-touch-icon" href="assets/images/favicon-192.png" />
+  <meta name="theme-color" content="#F9E2C8" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&family=Mukta:wght@400;600;700&family=Yatra+One&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <noscript>
+    <p style="font-family: 'Tiro Devanagari Marathi', Georgia, serif; text-align:center; padding:40px 20px; font-size:1.3rem; color:#4A2E33;">
+      नमस्कार मंडळी… मी लवकरच येत आहे! 👶✨<br /><br />
+      आमच्या आनंदाचा छोटासा ठेवा लवकरच येत आहे.<br />
+      अपेक्षित आगमन: २२ जानेवारी २०२७<br /><br />
+      प्रेमपूर्वक, गौरव आणि स्नेहल
+    </p>
+  </noscript>
+
+  <!-- ======= SKY: shared animated backdrop ======= -->
+  <div class="sky" id="sky" aria-hidden="true">
+    <div class="sky-gradient"></div>
+    <div class="sun-glow"></div>
+    <div class="stars" id="stars"></div>
+    <div class="clouds" id="clouds"></div>
+    <canvas id="particles" class="particles"></canvas>
+    <canvas id="confetti" class="confetti"></canvas>
+  </div>
+
+  <!-- ======= TORAN: mango-leaf & marigold garland (signature) ======= -->
+  <div class="toran" id="toran" aria-hidden="true"></div>
+
+  <!-- ======= SCENE 0: भेटवस्तू ======= -->
+  <section class="scene scene-gift is-active" id="scene-gift" aria-label="भेटवस्तू उघडा">
+    <button class="gift-box" id="gift-btn" type="button" aria-label="भेटवस्तू उघडण्यासाठी टॅप करा">
+      <span class="gift-lid" aria-hidden="true"><span class="gift-bow"></span></span>
+      <span class="gift-body" aria-hidden="true"></span>
+      <span class="gift-glow" aria-hidden="true"></span>
+    </button>
+    <p class="gift-text">तुमच्यासाठी एक खास भेट आहे…</p>
+    <p class="gift-hint">🎁 उघडण्यासाठी टॅप करा</p>
+  </section>
+
+  <main id="app">
+
+    <!-- ======= SCENE 1: Intro (auto-advances) ======= -->
+    <section class="scene scene-intro" id="scene-intro" aria-label="गोड बातमीची सुरुवात" hidden>
+      <div class="banner">
+        <div class="rangoli" aria-hidden="true"></div>
+        <div class="banner-glow" aria-hidden="true"></div>
+        <div class="banner-frame">
+          <!-- स्वतःचा फोटो वापरण्यासाठी assets/images/baby.svg बदला -->
+          <img src="assets/images/baby.svg" alt="चंद्रकोरीवर झोपलेल्या बाळाचे चित्र"
+               class="baby-illustration" id="baby-img" />
+        </div>
+      </div>
+
+      <h1 class="hello-message">
+        <span class="line line-1">नमस्कार मंडळी…</span>
+        <span class="line line-2">मी लवकरच येत आहे! <span class="emoji">👶✨</span></span>
+      </h1>
+
+      <p class="auto-hint" aria-hidden="true">थोड्याच क्षणांत एक गोड आश्चर्य…</p>
+    </section>
+
+    <!-- ======= SCENE 2: Celebration ======= -->
+    <section class="scene scene-celebration" id="scene-celebration" aria-label="कुटुंब आणि मित्रांचा आनंदोत्सव" hidden>
+      <h2 class="celebrate-heading">आनंदी आनंद गडे!</h2>
+      <div class="balloons" id="balloons" aria-hidden="true"></div>
+      <div class="crowd" id="crowd" role="img"
+           aria-label="आजी-आजोबा, काका-मावशी, भावंडे, चिमुकली मुले आणि जिवलग मित्र — सगळेजण नाचत, हात हलवत आनंद साजरा करत आहेत"></div>
+      <div class="diya-row" aria-hidden="true"></div>
+      <div class="ground" aria-hidden="true"></div>
+    </section>
+
+    <!-- ======= SCENE 3: Finale ======= -->
+    <section class="scene scene-finale" id="scene-finale" aria-label="आगमनाची माहिती" hidden>
+      <div class="finale-wrap">
+        <div class="rangoli rangoli-finale" aria-hidden="true"></div>
+        <div class="finale-card">
+          <p class="finale-lead">आमच्या आनंदाचा छोटासा ठेवा लवकरच येत आहे</p>
+          <div class="finale-divider" aria-hidden="true">❁ ❁ ❁</div>
+          <p class="finale-date-label">अपेक्षित आगमन</p>
+          <p class="finale-date">२२ जानेवारी २०२७</p>
+          <p class="finale-signature">प्रेमपूर्वक,<br /><span class="names">गौरव आणि स्नेहल</span></p>
+        </div>
+      </div>
+      <div class="diya-row" aria-hidden="true"></div>
+      <button class="replay-btn" id="replay-btn" type="button">↺ पुन्हा पहा</button>
+    </section>
+
+  </main>
+
+  <!-- Tap-for-sound toast (appears only if the browser blocks autoplay) -->
+  <div class="sound-toast" id="sound-toast" hidden>संगीतासाठी स्क्रीनला स्पर्श करा&nbsp;🔊</div>
+
+  <!-- ======= Music controls ======= -->
+  <div class="music-dock" id="music-dock" role="group" aria-label="संगीत नियंत्रण" hidden>
+    <button id="btn-play" class="dock-btn" type="button" aria-label="संगीत थांबवा" aria-pressed="true">⏸</button>
+    <button id="btn-mute" class="dock-btn" type="button" aria-label="आवाज बंद करा" aria-pressed="false">🔊</button>
+    <label class="volume-wrap">
+      <span class="visually-hidden">आवाज</span>
+      <input id="volume" type="range" min="0" max="1" step="0.05" value="0.6" aria-label="संगीताचा आवाज" />
+    </label>
+  </div>
+
+  <audio id="music" src="assets/audio/music.mp3" loop preload="auto"></audio>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
