@@ -25,6 +25,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- MANDATORY IMPORT: Google Fonts for proper Marathi text layout -->
+  <link href="https://googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
 
   <meta name="theme-color" content="#BFDCF0" />
@@ -32,11 +34,11 @@
 </head>
 <body>
   <noscript>
-    <p style="font-family: Georgia, serif; text-align:center; padding:40px 20px; font-size:1.3rem; color:#5C4A5E;">
-      Hello Everyone… I am coming soon! 👶✨<br /><br />
-      Our little bundle of joy is arriving soon.<br />
-      Expected Arrival: 22 January 2027<br /><br />
-      With love, Gaurav &amp; Snehal
+    <p style="font-family: 'Poppins', sans-serif; text-align:center; padding:40px 20px; font-size:1.3rem; color:#5C4A5E; line-height: 1.6;">
+      सर्वांना नमस्कार… मी लवकरच येत आहे! 👶✨<br /><br />
+      आमच्या आनंदाचा छोटा गोळा लवकरच आगमन करत आहे.<br />
+      अपेक्षित तारीख: १९ जानेवारी २०२७<br /><br />
+      स्नेहादर, गौरव आणि स्नेहल
     </p>
   </noscript>
 
@@ -67,8 +69,8 @@
       </div>
 
       <h1 class="hello-message">
-        <span class="line line-1">Hello Everyone…</span>
-        <span class="line line-2">I am coming soon! <span class="emoji">👶✨</span></span>
+        <span class="line line-1">सर्वांना नमस्कार…</span>
+        <span class="line line-2">मी लवकरच येत आहे! <span class="emoji">👶✨</span></span>
       </h1>
 
       <button class="reveal-btn" id="reveal-btn" type="button">
@@ -79,7 +81,7 @@
 
     <!-- ======= SCENE 2: Celebration ======= -->
     <section class="scene scene-celebration" id="scene-celebration" aria-label="Family celebration" hidden>
-      <h2 class="celebrate-heading">Everyone is over the moon!</h2>
+      <h2 class="celebrate-heading">सगळेच खूप आनंदात आहेत!</h2><br>🌙✨<br>
       <div class="balloons" id="balloons" aria-hidden="true"></div>
       <div class="crowd" id="crowd" role="img"
            aria-label="Cartoon family and friends — grandparents, uncles, aunts, cousins, children and close friends — dancing, waving and celebrating"></div>
@@ -89,11 +91,11 @@
     <!-- ======= SCENE 3: Final message ======= -->
     <section class="scene scene-finale" id="scene-finale" aria-label="Arrival details" hidden>
       <div class="finale-card">
-        <p class="finale-lead">Our little bundle of joy is arriving soon</p>
+        <p class="finale-lead">आमच्या आनंदाचा छोटा गोळा लवकरच आगमन करत आहे.</p>
         <div class="finale-divider" aria-hidden="true">✦ ✦ ✦</div>
-        <p class="finale-date-label">Expected Arrival</p>
-        <p class="finale-date">22 January 2027</p>
-        <p class="finale-signature">With love,<br /><span class="names">Gaurav &amp; Snehal</span></p>
+        <p class="finale-date-label">अपेक्षित तारीख</p>
+        <p class="finale-date">१९ जानेवारी २०२७</p>
+        <p class="finale-signature">स्नेहादर,<br /><span class="names">गौरव आणि स्नेहल</span></p>
       </div>
       <button class="replay-btn" id="replay-btn" type="button">↺ Watch again</button>
     </section>
