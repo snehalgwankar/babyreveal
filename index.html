@@ -114,6 +114,17 @@
   </main>
 
   <!-- Tap-for-sound toast (appears only if the browser blocks autoplay) -->
+<div class="sound-toast" id="sound-toast" hidden>संगीतासाठी स्क्रीनला स्पर्श करा&nbsp;🔊</div>
+
+  <!-- ======= Music controls ======= -->
+  <div class="music-dock" id="music-dock" role="group" aria-label="संगीत नियंत्रण" hidden>
+    <button id="btn-play" class="dock-btn" type="button" hidden aria-label="संगीत थांबवा" aria-pressed="true">⏸</button>
+    <button id="btn-mute" class="dock-btn" type="button" hidden aria-label="आवाज बंद करा" aria-pressed="false">🔊</button>
+    <label hidden class="volume-wrap">
+      <span hidden class="visually-hidden">आवाज</span>
+      <input hidden id="volume" type="range" min="0" max="1" step="0.05" value="0.6" aria-label="संगीताचा आवाज" />
+    </label>
+  </div>
 
   <audio id="music" src="assets/audio/music.mp3" loop preload="auto"></audio>
 
